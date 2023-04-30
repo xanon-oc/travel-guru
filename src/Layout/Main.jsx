@@ -1,9 +1,30 @@
 import React from "react";
+import Header from "../Shared/Header";
+import CardDetails from "../Components/CardDetails";
+import CardSlider from "../Components/CardSlider";
 
 const Main = () => {
   return (
-    <div>
-      <h2>This is the main layout</h2>
+    <div
+      className="relative h-screen overflow-hidden bg-cover bg-no-repeat p-12 text-center"
+      style={{ backgroundImage: "url('Rectangle 1.png')" }}
+    >
+      <div
+        className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+      >
+        <div className="mt-4">
+          <Header />
+        </div>
+        <div className="flex w-[81%] mx-auto justify-between mt-32">
+          <div className="w-[35%] bg-green-400 text-start">
+            <CardDetails />
+          </div>
+          <div className="w-[75%] bg-blue-400 text-start">
+            <CardSlider />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

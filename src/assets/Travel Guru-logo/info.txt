@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Salsa-Regular
+font link: https://fonts.google.com/specimen/Salsa
+font author: John Vargas Beltrán
+font author site: https://www.behance.net/vargasbeltran
+
+
+icon designer: P Thanga Vignesh
+icon designer link: /amoghdesign
+        
+{"bg":"#FCF4ED","icon-gradient-0":"#DA6E2A","icon-gradient-1":"#E39E5A","font":"#321E0F","slogan":"#463223"}
+      
