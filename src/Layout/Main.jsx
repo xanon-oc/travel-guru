@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../Shared/Header";
 import CardDetails from "../Components/CardDetails";
-import CardSlider from "../Components/CardSlider";
-
+import CardSlider from "../Components/CardSlider/CardSlider";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 const Main = () => {
   return (
     <div
@@ -16,13 +16,21 @@ const Main = () => {
         <div className="mt-4">
           <Header />
         </div>
-        <div className="flex w-[81%] mx-auto justify-between mt-32">
-          <div className="w-[35%] bg-green-400 text-start">
+        <div className="flex w-[81%] mx-auto justify-between mt-32 gap-8">
+          <div className="w-[45%] bg-green-400 text-start">
             <CardDetails />
           </div>
-          <div className="w-[75%] bg-blue-400 text-start">
+          <div className="w-[65%]">
             <CardSlider />
           </div>
+        </div>
+        <div className="flex justify-center gap-4 mt-8">
+          <button className="rounded-full">
+            <ChevronLeftIcon className="w-4" />
+          </button>
+          <button className="rounded-full">
+            <ChevronRightIcon className="w-4" />
+          </button>
         </div>
       </div>
     </div>
