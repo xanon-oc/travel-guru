@@ -8,6 +8,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 const CardSlider = () => {
   const [destination, setDestination] = useState([]);
   const [cardData, setCardData] = useState([]);
@@ -34,9 +35,11 @@ const CardSlider = () => {
               <p className="text-base font-normal  text-white w-[80%]">
                 <small>{cardData.description}</small>
               </p>
-              <button className="bg-[#F9A51A] rounded font-medium gap-2 mt-7">
-                Booking <ArrowLongRightIcon className="h-6 w-6" />
-              </button>
+              <Link to={`/categories/${cardData.id}`}>
+                <button className="bg-[#F9A51A] rounded font-medium gap-2 mt-7">
+                  Booking <ArrowLongRightIcon className="h-6 w-6" />
+                </button>
+              </Link>
             </div>
           ) : (
             <div className="text-start">

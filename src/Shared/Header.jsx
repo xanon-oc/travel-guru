@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/default-monochrome.svg";
 const Header = () => {
   return (
@@ -28,7 +28,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <a href="#">
+          <a href="/">
             <img src={logo} className="w-[120px] h-[56px] mr-8" alt="" />
             <span className="h-10 w-20 rounded-lg bg-white-200"></span>
           </a>
@@ -104,12 +104,12 @@ const Header = () => {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
-          <a
-            href="#"
+          <Link
+            to="/loginSignUp"
             className="rounded-lg bg-[#F9A51A] px-5 py-2 text-base  font-medium text-white-600"
           >
             Log in
-          </a>
+          </Link>
         </div>
       </div>
 

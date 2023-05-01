@@ -1,9 +1,14 @@
 import React from "react";
+import Header from "../Shared/Header";
+import { Outlet } from "react-router-dom";
 
 const LoginSignUp = () => {
   return (
     <div>
-      <h2>This is the login signup layout</h2>
+      <div>
+        <Header />
+        <Outlet />
+      </div>
     </div>
   );
 };
