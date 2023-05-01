@@ -1,10 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../Layout/Main";
+import Home from "../Components/Home";
+import CardSlider from "../Components/CardSlider/CardSlider";
 
 const route = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <Home />,
+    children: [
+      {
+        path: "/",
+        element: <CardSlider />,
+      },
+    ],
   },
 ]);
 
